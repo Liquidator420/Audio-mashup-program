@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Mashup Creator</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body style="background-image: url('/static/bg.jpg'); background-size: cover;">
+    <div class="container">
+        <div class="top">
+            <h1 class="title">Song Mashup Creator</h1>
+        </div>
+        <div class="bottom">
+            <div class="form-container">
+                <form action="/submit" method="post">
+                    <label for="singer_name">Singer Name:</label><br>
+                    <input type="text" id="singer_name" name="singer_name" required><br><br>
+
+                    <label for="num_songs">Number of Songs:</label><br>
+                    <input type="number" id="num_songs" name="num_songs" min="1" required><br><br>
+
+                    <label for="song_duration">Duration of Songs (in seconds):</label><br>
+                    <input type="number" id="song_duration" name="song_duration" min="1" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
